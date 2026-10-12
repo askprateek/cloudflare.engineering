@@ -34,19 +34,19 @@
     p { margin: 0 0 2rem; color: var(--muted); text-wrap: pretty; }
     a.cta {
       display: inline-flex; align-items: center; gap: 0.6rem; min-height: 44px;
-      padding: 0.75rem 1.25rem; border-radius: 999px; text-decoration: none; font-weight: 600;
+      padding: 0.75rem 1.25rem 0.75rem 1.125rem; border-radius: 999px; text-decoration: none; font-weight: 600;
       background: var(--btn-bg); color: var(--btn-fg); transition: transform .15s ease, opacity .15s ease;
     }
     a.cta:hover { opacity: .88; }
-    a.cta:active { transform: scale(.97); }
+    a.cta:active { transform: scale(.96); }
     a.cta:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; }
     a.cta svg { width: 1em; height: 1em; fill: currentColor; }
     .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem 1.25rem; }
-    a.link { color: var(--fg); font-weight: 600; text-underline-offset: 3px; display: inline-flex; align-items: center; min-height: 44px; }
+    a.link { color: var(--fg); font-weight: 600; transition: color .15s ease; text-underline-offset: 3px; display: inline-flex; align-items: center; min-height: 44px; }
     a.link:hover { color: var(--muted); }
     a.link:focus-visible { outline: 3px solid var(--accent); outline-offset: 3px; border-radius: 4px; }
     footer { margin-top: 3rem; font-size: 0.8125rem; color: var(--muted); }
-    @media (prefers-reduced-motion: reduce) { a.cta { transition: none; } }
+    @media (prefers-reduced-motion: reduce) { a.cta, a.link { transition: none; } }
   </style>
 </head>
 <body>
